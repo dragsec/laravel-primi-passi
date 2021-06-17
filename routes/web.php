@@ -15,12 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('/test', function () {
-    return view("test", [
+    return view('test', [
         "name" => "Mario",
         "surname" => "Rossi"
     ]);
-})->name("test");
+})->name('test');
 

@@ -7,6 +7,14 @@
     <title>test</title>
 </head>
 <body>
-    test
+    <h1>Test</h1>
+    <form action="">
+        <input type="text" value="{{ $name }}">
+        <input type="text" value="{{ $surname }}">
+    </form>
+
+
+
+    <h3>Back to <a href="{{ route('home') }}">Home Page</a></h3>
 </body>
 </html>
